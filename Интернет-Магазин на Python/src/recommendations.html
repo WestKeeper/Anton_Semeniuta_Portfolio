@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icon/guitar.ico">
+
+  <title>Recommendations</title>
+</head>
+<script src="js/click.js"></script>
+<body>
+
+    
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-block">
+        <div class="navbar__menu">
+          <a href="#" class="navbar__menu-btn" id="menu-btn">
+            <span class="navbar__menu-span"></span>
+            <span class="navbar__menu-text">Меню</span>
+          </a>
+          <ul class="navbar__menu-points" id="navbar__menu-points">
+              <li class="navbar__menu-point"><a href="index.html" class="navbar__a a_bord">Главная</a></li>
+              <li class="navbar__menu-point submenu-link__1"><a href="#" class="navbar__a">Гитары</a>
+                <ul class="submenu submenu__1">
+                  <li class="navbar__menu-point"><a href="#">Акустические</a></li>
+                  <li class="navbar__menu-point"><a href="#" class="navbar__menu-point-link2">Классические</a></li>
+                  <li class="navbar__menu-point"><a href="#">Укулеле</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-point submenu-link__2"><a href="#" class="navbar__a">Комплектующие</a>                
+                <ul class="submenu submenu__2">
+                  <li class="navbar__menu-point"><a href="#">Струны</a></li>
+                  <li class="navbar__menu-point"><a href="#" class="navbar__menu-point-link2">Медиаторы</a></li>
+                  <li class="navbar__menu-point"><a href="#">Каподастры</a></li>
+              </ul></li>
+              <li class="navbar__menu-point submenu-link__3"><a href="recommendations.html" class="navbar__a">Рекомендации</a></li>
+              <li class="navbar__menu-point submenu-link__4"><a href="profile.html" class="navbar__a">Личный кабинет</a></li>
+              <li class="navbar__menu-point submenu-link__5"><a href="contacts.html" class="navbar__a">Контакты</a></li>
+              <li class="navbar__menu-point submenu-link__6"><a href="cart.html" class="navbar__a">Корзина</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar__menu -->
+        <div class="navbar__logo">
+          <div class="navbar-logo__image">
+            <a href="index.html" class="navbar-logo-img">
+              <img src="img/nav/logo.png" alt="map-location">
+            </a>
+          </div>
+        </div>
+        <!-- /.navbar__logo -->
+      </div>
+      <!-- /.navbar-block -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <section class="main">
+    <div class="container">
+      <div class="hero-block">
+        
+        <div class="recommend__block">
+
+          <div class="recommend__card">
+            <div class="recommend__question" id="recHeader1" onClick="shiftSubDiv(1)">
+              <span class="recommend__question-text">
+                Акустическая гитара, классическая, или электрогитара?
+              </span>
+            </div>
+            <div class="recommend__answer recommend__answer_1" id="subDiv1" style="display: block;">
+              <p class="recommend__answer-text">
+                Существует несколько видов гитар - классическая, акустическая и электрогитара. Каждая из них имеет свои особенности, но строй, 
+                аппликатура аккордов и принцип звукоизвлечения у всех одинаковый. Если перед вами стоит вопрос, какую гитару выбрать новичку, 
+                то лучше брать традиционную.
+              </p>
+              <p class="recommend__answer-text">
+                Специалисты рекомендуют начинать обучение именно с классической гитары. На ней установлены мягкие нейлоновые струны, 
+                гриф имеет увеличенную ширину, а звучание можно охарактеризовать как мягкое и округлое. На таких гитарах исполняют 
+                классические произведения, а также музыку в стиле джаз и фламенко. Именно их требуют приобретать преподаватели музыкальной школы. 
+                Новичку будет удобно разучивать аппликатуру аккордов: мягкие струны легко зажимать, а большое расстояние между ними не даст 
+                пальцам запутаться при быстрой смене аккордов.
+              </p>
+              <div class="recommend__image">
+                <img src="img/recommendations/classic.jpg" alt="classic" class="recommend__img">
+              </div>
+              <p class="recommend__answer-text">
+                Не перепутайте классическую гитару с акустической. На акустическом инструменте устанавливают металлические струны, 
+                корпус гитары имеет большие размеры, что обуславливает её громкое звучание. Ширина грифа гораздо уже таковой на классике. 
+                Для некоторых людей это плюс, ведь брать аккорд барре (аккорд, при котором один из пальцев полностью зажимает все струны гитары) 
+                гораздо проще. Однако металлические струны впиваются в непривыкшую кожу, вызывая выраженные болевые ощущения. 
+                Такого недостатка лишены гитары с нейлоновыми струнами.
+              </p>
+              <div class="recommend__image">
+                <img src="img/recommendations/acoustic.jpg" alt="classic" class="recommend__img">
+              </div>
+              <span class="recommend__product-title">Рекомендуемые товары</span>
+              <div class="recommend__product">
+
+            <div class="main__product-card">
+              <a href="{{ product.get_absolute_url }}"><div class="main__product-image">
+                <img class='main__product-img' src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}" alt="product">
+              </div></a>
+              <div class="main__product-title">
+                <a href="{{ product.get_absolute_url }}" class="main__product-a"><span class="main__product-title-text">{{ product.name }}</span></a>
+              </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
+  
+          <div class="recommend__card">
+            <div class="recommend__question" id="recHeader2" onClick="shiftSubDiv(2)">
+              <span class="recommend__question-text">
+                Как выбрать гитару начинающему взрослому – мужчине или девушке
+              </span>
+            </div>
+            <div class="recommend__answer" id="subDiv2">
+              <p class="recommend__answer-text">
+                Выбор гитары для начинающих взрослых никак не зависит от вашего пола. 
+                Однако некоторые особенности комплекции могут сыграть роль. Существующие размеры гитар предназначены для удобства детей. 
+                Взрослому человеку следует выбрать размер гитары 4/4, что, естественно, подходит любому мужчине. 
+                Однако, хрупким девушкам можно выбрать подростковый размер - 7/8.
+              </p>
+              <div class="recommend__image">
+                <img src="img/recommendations/man.jpg" alt="man" class="recommend__img">
+              </div>
+              <p class="recommend__answer-text">
+                Порою красота может помешать выбрать гитару для начинающих девушек: 
+                слишком длинные ногти мешают правильно зажимать струны.
+              </p>
+              <p class="recommend__answer-text">
+                Обычно гитару выбирают по удобству, звучанию, материалам и внешнему виду. 
+                Как мы уже говорили ранее, старайтесь приобретать инструменты известных брендов, которые гарантируют высокое качество продукции.
+              </p>
+            </div>
+          </div>
+  
+          <div class="recommend__card">
+            <div class="recommend__question" id="recHeader3" onClick="shiftSubDiv(3)">
+              <span class="recommend__question-text">
+                Как выбрать гитару для начинающих подростков
+              </span>
+            </div>
+            <div class="recommend__answer" id="subDiv3">
+              <p class="recommend__answer-text">
+                С подростками, конечно, дела обстоят намного проще, чем с маленькими детьми. 
+                Подростки могут сформировать собственное четкое мнение об инструменте, конечно же не без помощи взрослого. 
+                Необходимо пользоваться теми же правилами выбора, что мы описывали ранее. Главное помнить, что подростки - 
+                все еще не взрослые люди, и им может понадобиться гитара поменьше - 3/4 или 7/8. 
+                Если подростку хорошо подошла гитара размером 4/4 - можете смело покупать её.
+              </p>
+              <div class="recommend__image">
+                <img src="img/recommendations/teenager.jpg" alt="teenager" class="recommend__img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.hero-block -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.hero -->
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-block">
+          <div class="left-block">
+            <span class="left__message">Спасибо за то, что вы с нами!</span>
+          </div>
+          <div class="footer__contacts">
+            <span class="footer__authors footer__authors_1">Антон Семенюта</span>
+            <span class="footer__info">Пирогова 18-А, к.208</span>
+            <span class="footer__info">antonsemenyuta@yandex.ru</span>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

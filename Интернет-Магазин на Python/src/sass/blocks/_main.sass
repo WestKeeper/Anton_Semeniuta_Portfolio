@@ -1,0 +1,152 @@
+.main
+  min-height: 650px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &__products
+    display: flex
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    margin-top: 32px
+    margin-bottom: 70px
+    max-width: 800px
+  &__product
+    &-card
+      width: 300px
+      height: 325px
+      border: 1px solid $nav-border
+      margin-left: 80px
+      margin-bottom: 40px
+    &-image
+      height: 275px
+      border-bottom: 1px solid $nav-border
+    &-img
+      max-height: 100%
+      min-height: 100%
+    &-title
+      +bold
+      font-size: 20px
+      color: $text-black
+      display: flex
+      align-self: center
+      justify-content: center
+      height: 50px
+      &-text
+        display: flex
+        align-self: center
+        justify-content: center
+    &-a
+      display: flex
+      align-items: center
+
+
+
+.filter
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 143px
+  left: 180px 
+  padding: 40px
+  padding-top: 20px
+  padding-bottom: 20px
+  min-width: 300px
+  border: 1px solid $nav-border
+  box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+  &__sub
+    +reg
+    padding: 30px
+    padding-top: 20px
+    padding-bottom: 20px
+    position: absolute
+    left: 258px
+    font-size: 18px
+    border: 1px solid $nav-border
+    box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+    transform: scaleY(0)
+    transform-origin: 0 0
+    transition: .5s ease-in-out
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    background-color: darken($nav-color, 10%)
+    &_1
+      top: 55px
+    &_2
+      top: 83px
+    &_3
+      top: 111px
+    &_4
+      top: 139px
+    &_5
+      top: 167px
+    &_6
+      top: 195px
+    &_7
+      top: 223px
+    &_8
+      top: 251px
+    &-point
+      margin-bottom: 10px
+      cursor: pointer
+
+  &__title
+    +reg
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 22px
+    color: $green-color
+  &__point
+    +reg
+    padding-top: 4px
+    padding-bottom: 4px
+    padding-left: 8px
+    margin-bottom: 0
+    font-size: 18px
+    cursor: pointer
+    &:hover
+      background-color: darken($nav-color, 10%)
+
+.filter__kind:hover +.filter__sub_1
+  transform: scaleY(1) !important
+.filter__producer:hover +.filter__sub_2
+  transform: scaleY(1) !important
+.filter__carcass:hover +.filter__sub_3
+  transform: scaleY(1) !important
+.filter__color:hover +.filter__sub_4
+  transform: scaleY(1) !important
+.filter__carcass-material:hover +.filter__sub_5
+  transform: scaleY(1) !important
+.filter__strings:hover +.filter__sub_6
+  transform: scaleY(1) !important
+.filter__carcass-type:hover +.filter__sub_7
+  transform: scaleY(1) !important
+
+.filter__sub_1:hover
+  transform: scaleY(1)
+.filter__sub_2:hover
+  transform: scaleY(1)
+.filter__sub_3:hover
+  transform: scaleY(1)
+.filter__sub_4:hover
+  transform: scaleY(1)
+.filter__sub_5:hover
+  transform: scaleY(1)
+.filter__sub_6:hover
+  transform: scaleY(1)
+.filter__sub_7:hover
+  transform: scaleY(1)
+
+
+.create
+  min-height: 500px
+  &-block
+    padding-top: 50px
+  &__text
+    +reg
+    font-size: 25px
+.thx
+  &__a
+    +bold

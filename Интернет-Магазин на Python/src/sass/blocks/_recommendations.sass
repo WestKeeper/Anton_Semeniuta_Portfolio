@@ -1,0 +1,38 @@
+.recommend
+  &__block
+    margin-top: 70px
+    margin-bottom: 70px
+    border: 2px solid $nav-border
+    border-bottom: 0px
+  &__question
+    cursor: pointer
+    padding-top: 20px
+    padding-bottom: 20px
+    +bold
+    font-size: 20px
+    border-bottom: 2px solid $nav-border
+    box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+    display: flex
+    justify-content: center
+  &__answer
+    display: none
+    padding-top: 20px
+    padding-left: 30px
+    padding-right: 30px
+    +reg
+    font-size: 18px
+    border-bottom: 2px solid $nav-border
+    box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+    &-text
+      margin-top: 0
+  &__image
+    margin: auto
+    margin-top: 10px
+    margin-bottom: 10px
+    max-width: 600px
+  &__product
+    padding-top: 40px
+    &-title
+      +bold
+      font-size: 40px
+      

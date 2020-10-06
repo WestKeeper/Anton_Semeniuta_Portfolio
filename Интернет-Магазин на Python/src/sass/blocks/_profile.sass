@@ -1,0 +1,50 @@
+.profile
+  &-block
+    display: flex
+    padding-top: 60px
+    padding-bottom: 60px
+  &__menu
+    padding: 40px
+    padding-top: 20px
+    padding-bottom: 10px
+    margin-right: 100px
+    min-width: 400px
+    max-height: 220px
+    border-bottom: 2px solid $nav-border
+    box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+    &-title
+      +bold
+      font-size: 40px
+    &-block
+      padding-top: 20px
+      display: flex
+      flex-direction: column
+      font-size: 25px
+    &-point
+      margin-bottom: 10px
+      color: $text-color-dark
+  &__info
+    &-title
+      +bold
+      font-size: 40px
+    &-subtitle
+      +reg
+      font-size: 20px
+    &-form
+      display: flex
+      flex-direction: column
+  &__input
+    font-size: 20px
+    margin-bottom: 20px
+    max-width: 300px
+    min-height: 40px
+    &-name
+      margin-bottom: 15px
+      +reg
+      font-size: 20px
+  &__button
+    margin-top: 30px
+    +bold
+    font-size: 25px
+    max-width: 500px
+    min-height: 60px

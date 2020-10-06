@@ -1,0 +1,43 @@
+.footer
+  padding-top: 30px
+  padding-bottom: 30px
+  background-color: $footer-color
+  overflow: hidden
+  &-block
+    display: flex
+    justify-content: space-between
+  &__contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__authors
+    margin-bottom: 10px
+    +reg
+    font-size: 20px
+    color: $text-white
+    &_1
+      margin-bottom: 5px
+  &__info
+    +thin
+    font-size: 17x
+    color: $text-white
+    margin-bottom: 4px
+.left
+  &-block
+    display: flex
+    align-items: center
+    +thin
+    color: $text-white
+  &__img
+    margin-right: 19px
+    min-width: 14px
+    min-height: 18px
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    font-size: 13px
+  &__message
+    margin-bottom: 7px
+    +bold
+    font-size: 40px

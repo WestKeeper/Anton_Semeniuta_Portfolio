@@ -1,0 +1,83 @@
+.product
+  &-block
+    margin-top: 60px
+  &__top
+    display: flex
+    margin-bottom: 80px
+    justify-content: space-between
+  &__right
+    width: 540px
+  &__image
+    max-width: 500px
+    margin-right: 150px
+  &__title
+    +bold
+    font-size: 40px
+    margin-bottom: 50px
+  &__desc
+    +reg
+    font-size: 30px
+    margin-bottom: 60px
+  &__price
+    +bold
+    font-size: 30px
+    &-in
+      +reg
+      display: inline
+      margin-left: 10px
+  &__button
+    margin-top: 80px
+    +bold
+    font-size: 25px
+    min-width: 400px
+    min-height: 80px
+  &__info
+    margin-bottom: 60px
+    &-title
+      +bold
+      font-size: 30px
+      margin-bottom: 40px
+    &-description
+      display: flex
+    &-left
+      margin-right: 350px
+    &-point
+      +reg
+      font-size: 25px
+      margin-bottom: 20px
+      color: $text-color-dark
+
+.comment
+  &__block
+    margin-bottom: 80px
+  &__point
+    +reg
+    font-size: 25px
+    padding: 40px
+    padding-top: 20px
+    padding-bottom: 20px
+    margin-bottom: 30px
+    display: flex
+    flex-direction: column    
+    min-width: 100%
+    border: 1px solid $nav-border
+    box-shadow: inset 0 2px 32px rgba(0, 0, 0, 0.1)
+  &__username
+    +bold
+    font-size: 20px
+    margin-bottom: 20px
+  &__input
+    margin-top: 20px
+    padding: 40px
+    padding-top: 20px
+    padding-bottom: 20px
+
+form.comment__body
+  +reg
+  font-size: 25px
+  p
+    display: flex
+    flex-direction: column
+  label
+    margin: 20px
+    +bold
