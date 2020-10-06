@@ -1,0 +1,42 @@
+.modal
+  &-thx
+    position: fixed
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(#000, 0.5)
+    display: none
+    &_active
+      display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 450px
+    width: 90%
+    min-width: 200px
+    background-color: $text-white
+    padding: 40px
+    border: 1px solid $text-black
+    &__title
+      +reg
+      font-size: 20px
+      color: $text-black
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      min-width: 25px
+      min-height: 25px
+      color: $text-white
+      border: none
+      background-color: $green-color
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+.hero-form-new
+  background-color: #ffffff
+  display: relative
+.hero__form-wrap-new
+  display: relative

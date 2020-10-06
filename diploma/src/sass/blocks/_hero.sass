@@ -1,0 +1,170 @@
+.hero
+  overflow: hidden
+  background: url('../img/hero/hero-bg.png') no-repeat
+  background-size: cover
+  +reg
+  padding-top: 124px
+  padding-bottom: 101px
+  &-block
+    display: flex
+    justify-content: space-between
+  &-text
+    color: $text-white
+    &__title
+      margin: -9px 
+      padding: 0
+      margin-bottom: 37px
+      font-size: 48px
+    &__subtitle
+      display: inline-block
+      margin-bottom: 63px 
+      +thin
+      font-size: 20px
+  &-list
+    margin: 0
+    padding: 0
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 22px
+      font-size: 15px
+      +thin
+      &:last-child
+        margin-bottom: 0
+    &__image
+      width: 35px
+      height: 35px
+      border: 1px solid $text-white
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      margin-right: 27px
+    &__text
+      max-width: 210px
+  &-form
+    min-width: 370px
+  &__form
+    background-color: #ffffff
+    padding-top: 37px
+    padding-bottom: 45px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-bold
+      +bold
+    &-wrap
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: relative
+    &-title
+      margin: 0
+      margin-bottom: 28px
+      max-width: 235px
+      text-align: center
+      +reg
+      font-size: 18px
+      color: #000
+  &__input
+    margin-bottom: 15px
+    padding-top: 10px
+    padding-bottom: 10px
+    min-width: 260px
+    min-height: 50px
+    color: #7c7c7c
+    text-align: center
+    border: 1px solid #e8e8e8
+    +thin
+    &:focus  
+      border-color: $green-color
+    &:last-child
+      margin-bottom: 20px
+  &__button
+    min-width: 260px
+    min-height: 60px
+    background-color: $green-color
+    border: 0
+    text-transform: uppercase
+    color: $text-white
+    +semi
+    &:hover
+      background-color: lighten($green-color, 10%)
+@media (max-width: 1200px)
+  .hero
+    padding-top: 180px
+    background: url('../img/hero/hero-bg-mobile.png') no-repeat
+    background-size: cover
+@media (max-width: 768px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &-text
+      padding-right: 0
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      margin-bottom: 66px
+      &__item
+        margin-bottom: 20px
+        padding-right: 0
+        margin-right: 0
+      &__text
+        font-size: 12px
+      &__image
+        width: 40px
+        height: 40px
+        margin-right: 10px
+        padding: 0 10px
+        img
+          min-width: 16px
+@media (max-width: 567px)
+  .hero
+    &-text
+      &__title
+        font-size: 18px
+      &__subtitle
+        font-size: 14px
+.modal-new
+  display: none
+  justify-content: center
+  align-items: center
+  z-index: 1
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background-color: rgba(#000, 0.7)
+  &_active
+    display: flex
+  .hero-form-new
+    position: relative
+    padding-top: 40px
+    padding-bottom: 43px
+    max-width: 370px
+    display: flex
+    flex-direction: column
+    align-items: center
+.modal-dialog__close-new
+      position: absolute
+      top: 0
+      right: 0
+      min-width: 25px
+      min-height: 25px
+      color: $text-white
+      border: none
+      background-color: $green-color
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer

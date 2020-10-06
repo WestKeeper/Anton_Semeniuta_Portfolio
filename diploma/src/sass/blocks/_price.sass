@@ -1,0 +1,144 @@
+.price
+  overflow: hidden
+  background-color: $text-white
+  padding-top: 93px
+  padding-bottom: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  &__title
+    +reg
+    font-size: 36px
+    margin: 0
+    margin-bottom: 37px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:after
+      content: ''
+      margin-top: 22px
+      display: block
+      min-width: 31px
+      min-height: 2px
+      background-color: $green-color
+  &__subtitle
+    +reg
+    display: block
+    font-size: 20px
+    margin: auto
+    margin-top: 0
+    margin-bottom: 76px
+    text-align: center
+  &__card
+    padding-top: 38px
+    padding-bottom: 40px 
+    margin-bottom: 20px
+    min-width: 370px
+    min-height: 687px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:hover
+      box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+      img
+        filter: none
+      button
+        background-color: $green-color
+        border: 0
+        color: $text-white
+        &:hover
+          background-color: lighten($green-color, 10%)
+  &__btn
+    position: absolute
+    bottom: 40px
+    min-width: 230px
+    min-height: 55px
+    background-color: transparent
+    border: 1px solid #aeaeae
+    text-transform: uppercase
+    color: $text-black
+    +semi
+    font-size: 13px
+.cards
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.card
+  position: relative
+  &__title
+    +reg
+    font-size: 20px
+    color: $text-black
+    margin: 0
+    margin-bottom: 24px
+    text-align: center
+  &__image
+    max-width: 300px
+    max-height: 220px
+    margin-bottom: 30px
+    img
+      filter: grayscale(100%)
+  &__text
+    margin-bottom: 31px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__string
+    +thin
+    color: $text-black
+    font-size: 16px
+    margin-bottom: 7px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:after
+      content: ''
+      margin-top: 8px
+      display: block
+      width: 9px
+      height: 2px
+      background-color: $green-color
+    &:last-child
+      margin-bottom: 0
+      &:after
+        height: 0
+  &__p
+    margin: 0
+    max-width: 234px
+    +thin
+    font-size: 16px
+    text-align: center
+@media (max-width: 768px)
+  .price
+    padding-top: 50px
+    &__card
+      img
+        filter: none
+    &__title
+      font-size: 24px
+    &__subtitle
+      font-size: 16px
+  .card
+    &s
+      display: flex
+      flex-direction: column
+      align-items: center
+@media (max-width: 400px)
+  .price
+    &__card
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 220px
+  .card
+    &__image
+      max-width: 220px
+@media (max-width: 360px)
+  .price
+    &__card
+      margin-left: -30px

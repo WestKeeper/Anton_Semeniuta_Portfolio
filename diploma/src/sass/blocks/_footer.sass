@@ -1,0 +1,44 @@
+.footer
+  padding-top: 48px
+  padding-bottom: 48px
+  background-color: $footer-color
+  overflow: hidden
+  &-block
+    display: flex
+    justify-content: space-between
+  &__contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__tel
+    margin-bottom: 5px
+    +bold
+    font-size: 17px
+    color: $text-white
+  &__order
+    +reg
+    color: $green-color
+    border-bottom: 1px solid $green-color
+    text-align: right
+.address
+  &-block
+    display: flex
+    align-items: center
+    +thin
+    color: $text-white
+  &__img
+    margin-right: 19px
+    min-width: 14px
+    min-height: 18px
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    font-size: 13px
+  &__city
+    margin-bottom: 7px
+@media (max-width: 568px)
+  .footer
+    &__order
+      border: none
+      text-decoration: underline

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-block">
+        <div class="navbar__menu">
+          <a href="#" class="menu-btn" id="menu-btn">
+            <span class="menu-span"></span>
+            <span class="menu-text">Меню</span>
+          </a>
+          <ul class="navbar__menu-points" id="navbar__menu-points">
+              <li class="navbar__menu-point menu__point__1"><a href="#hero" class="navbar__a">Главная</a></li>
+              <li class="navbar__menu-point menu__point__2"><a href="#price" class="navbar__a">Виды макетов</a></li>
+              <li class="navbar__menu-point menu__point__3"><a href="#portfolio" class="navbar__a">Комплектация макетов</a></li>
+              <li class="navbar__menu-point menu__point__4"><a href="#goal" class="navbar__a">Реализованные проекты</a></li>
+              <li class="navbar__menu-point menu__point__5"><a href="#customer" class="navbar__a">Наши клиенты</a></li>
+              <li class="navbar__menu-point menu__point__6"><a href="#footer" class="navbar__a">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar__menu -->
+        <div class="navbar__contacts">
+          <a href="tel:88008913333" class="navbar__num">8 800 891-33-33</a>
+          <a href="#" class="navbar__order" id="nav-order">Заказать обратный звонок</a>
+        </div>
+        <!-- /.navbar__contacts -->
+      </div>
+      <!-- /.navbar-block -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.navbar -->
+
+  <section class="modal-menu" id="modal-menu">
+      <ul class="navbar__modal-menu-points" id="navbar__modal-menu-points">
+          <li class="navbar__modal-menu-point menu__modal-point__1"><a href="#hero" class="navbar__model-a" id="navbar__model-a">Главная</a></li>
+          <li class="navbar__modal-menu-point menu__modal-point__2"><a href="#price" class="navbar__model-a" id="navbar__model-a">Виды макетов</a></li>
+          <li class="navbar__modal-menu-point menu__modal-point__3"><a href="#portfolio" class="navbar__model-a" id="navbar__model-a">Комплектация макетов</a></li>
+          <li class="navbar__modal-menu-point menu__modal-point__4"><a href="#goal" class="navbar__model-a" id="navbar__model-a">Реализованные проекты</a></li>
+          <li class="navbar__modal-menu-point menu__modal-point__5"><a href="#customer" class="navbar__model-a" id="navbar__model-a">Наши клиенты</a></li>
+          <li class="navbar__modal-menu-point menu__modal-point__6"><a href="#footer" class="navbar__model-a" id="navbar__model-a">Контакты</a></li>
+      </ul>
+  </section>
+
+  <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-block">
+            <div class="hero-text">
+              <h1 class="hero-text__title">
+                 Изготовление макетов<br> любой сложности
+              </h1>
+              <span class="hero-text__subtitle">Продажи. Инвестиции. Имидж.</span>
+              <ul class="hero-list">
+                <li class="hero-list__item">
+                  <div class="hero-list__image">
+                    <img src="img/hero/5.png" alt="5">
+                  </div>
+                  <span class="hero-list__text">Срок производства<br> до 5 дней</span>
+                </li>
+                <li class="hero-list__item">
+                  <div class="hero-list__image">
+                    <img src="img/hero/24.png" alt="24">
+                  </div>
+                  <span class="hero-list__text">Гарантия на макеты<br> 24 месяца</span>
+                </li>
+                <li class="hero-list__item">
+                  <div class="hero-list__image">
+                    <img src="img/hero/reload.png" alt="reload">
+                  </div>
+                  <span class="hero-list__text">Проектируем, изготовляем, доставляем и устанавливаем</span>
+                </li>
+                <li class="hero-list__item">
+                    <div class="hero-list__image">
+                      <img src="img/hero/map-location.png" alt="map-location">
+                    </div>
+                    <span class="hero-list__text">Застрахуем, доставим<br> и установим</span>
+                  </li>
+              </ul>
+            </div>
+            <!-- /.hero-text -->
+            <div class="hero-form">
+                <form action="#" class="form hero__form" id="hero__form">
+                    <div class="hero__form-wrap">
+                      <h3 class="hero__form-title">Оставьте заявку и получите расчет стоимости макета в течение <span class="hero__form-bold">30 минут</span></h3>
+                      <input type="text" name="username" class="input hero__input hero__input_1" placeholder="Ваше имя">
+                      <input type="tel" name="phone" class="input hero__input hero__input_2 phone" placeholder="Контактный телефон">
+                      <input type="email" name="email" class="input hero__input hero__input_2" placeholder="Электронная почта">
+                    </div>
+                    <button class="button hero__button" id="button-thx">Оставить заявку</button>
+                </form>
+            </div>
+            <!-- /.hero-image -->
+          </div>
+          <!-- /.hero-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.hero -->
+
+
+      <section class="section price" id="price">
+          <div class="container">
+            <h2 class="section-title price__title">Виды макетов</h2>
+            <!-- /.section-title price__title -->
+            <span class="section-subtitle price__subtitle">Создаем макеты от небольших домов до космических станций</span>
+            <!-- /.section-subtitle price__subtitle -->
+    
+            <div class="cards">
+              <div class="card price__card">
+                <h4 class="card__title">Архитектурные макеты</h4>
+                <div class="card__image"><img src="img/price/architecture.jpg" alt="architecture"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                  <span class="card__string">Многоэтажные дома</span>
+                  <span class="card__string">Жилые комплексы</span>
+                  <span class="card__string">Коттеджные поселки</span>
+                  <span class="card__string">Торговые комплексы</span>
+                  <span class="card__string">Бизнес-парки</span>
+                  <span class="card__string">Административные здания</span>
+                  <span class="card__string">Гостиницы и санатории</span>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price" id="count__price">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+              <div class="card price__card">
+                <h4 class="card__title">Градостроительные макеты</h4>
+                <div class="card__image"><img src="img/price/city.jpg" alt="city"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                    <span class="card__string">Области</span>
+                    <span class="card__string">Города</span>
+                    <span class="card__string">Районы</span>
+                    <span class="card__string">Микрорайоны</span>
+                    <span class="card__string">Территории</span>
+                    <span class="card__string">Мосты и тоннели</span>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price2" id="count__price2">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+              <div class="card price__card">
+                  <h4 class="card__title">Промышленные макеты</h4>
+                <div class="card__image"><img src="img/price/factory.png" alt="factory"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                    <span class="card__string">Предприятия и фабрики</span>
+                    <span class="card__string">Энергетические объекты</span>
+                    <span class="card__string">Заводы</span>
+                    <span class="card__string">Научные центры</span>
+                    <span class="card__string">Трубопроводы</span>
+                    <span class="card__string">Производственные линии</span>
+                    <span class="card__string">Технологические линии</span>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price3" id="count__price3">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+              <div class="card price__card">
+                <h4 class="card__title">Интерьерные макеты</h4>
+                <div class="card__image"><img src="img/price/interior.jpg" alt="interior"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                    <span class="card__string">Квартиры</span>
+                    <span class="card__string">Офисы</span>
+                    <span class="card__string">Коттеджи</span>
+                    <span class="card__string">Магазины</span>
+                    <span class="card__string">Спортивные комплексы</span>
+                    <span class="card__string">Торговые центры</span>
+                    <span class="card__string">Заводы</span>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price4" id="count__price4">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+              <div class="card price__card">
+                  <h4 class="card__title">Ландшафтные макеты</h4>
+                <div class="card__image"><img src="img/price/landsсape.jpg" alt="landsсape"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                    <span class="card__string">Парки</span>
+                    <span class="card__string">Сады</span>
+                    <span class="card__string">Горы</span>
+                    <span class="card__string">Озера</span>
+                    <span class="card__string">Рельефы местности</span>
+                    <span class="card__string">Участки</span>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price5" id="count__price5">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+              <div class="card price__card">
+                  <h4 class="card__title">Индивидуальные макеты</h4>
+                <div class="card__image"><img src="img/price/individual.jpg" alt="individual"></div>
+                <!-- /.card__image -->
+                <div class="card__text">
+                  <p class="card__p">Мы можем воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией и совершенно любых размеров</p>
+                </div>
+                <!-- /.card__text -->
+                <button class="button price__btn count__price6" id="count__price6">Рассчитать стоимость</button>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.cards -->
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.section price -->
+  
+        <section class="section portfolio" id="portfolio">
+          <div class="container">
+            <h2 class=" portfolio__title">
+              Реализованные проекты
+            </h2>
+            <span class="section-subtitle portfolio__subtitle">Более 100 компаний уже решают свои бизнес - задачи с помощью наших клиентов</span>
+            <div class="slider-block">
+              <div class="arrows__left arrows__left-port">
+                <img src="img/portfolio/left-arrow.svg" alt="left-arrow">
+              </div>
+              <div class="slider slider__portfolio" data-wow-delay="0.2s">
+                <div class="slider__item">
+                  <div class="slider__left">
+                    <div class="slider__img-wrap">
+                        <img class="slider__img slider__img-port" src="img/portfolio/bay.jpg" alt="bay">
+                    </div>
+                  </div>
+                  <div class="slider__right">
+                    <h4 class="slider__title">Порт Артек</h4>
+                    <span class="slider__label">Описание:</span>
+                    <span class="slider__description">Презентация порта Артек для первых лиц государства</span>
+                    <div class="slider__properties">
+                      <div class="slider__property property-scale">
+                        <div class="property__label">Масштаб:</div>
+                        <div class="property__value">1:200</div>
+                      </div>
+                      <div class="slider__property property-size">
+                          <div class="property__label">Размер:</div>
+                          <div class="property__value">1000x2000</div>
+                      </div>
+                      <div class="slider__property property-deadline">
+                          <div class="property__label">Срок изготовления:</div>
+                          <div class="property__value">40 дней</div>
+                      </div>
+                    </div>
+                    <button class="button slider__btn order__maket" id="order__maket">Заказать макет</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__left">
+                      <div class="slider__img-wrap">
+                          <img class="slider__img slider__img-port" src="img/portfolio/highway-Vladimir.jpg" alt="highway-Vladimir">
+                      </div>
+                    </div>
+                    <div class="slider__right">
+                      <h4 class="slider__title">Шоссе Владимирской области</h4>
+                      <span class="slider__label">Описание:</span>
+                      <span class="slider__description">Презентация шоссе для первых лиц государства</span>
+                      <div class="slider__properties">
+                        <div class="slider__property property-scale">
+                          <div class="property__label">Масштаб:</div>
+                          <div class="property__value">1:100</div>
+                        </div>
+                        <div class="slider__property property-size">
+                            <div class="property__label">Размер:</div>
+                            <div class="property__value">1000x2500</div>
+                        </div>
+                        <div class="slider__property property-deadline">
+                            <div class="property__label">Срок изготовления:</div>
+                            <div class="property__value">20 дней</div>
+                        </div>
+                      </div>
+                      <button class="button slider__btn order__maket2" id="order__maket2">Заказать макет</button>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                      <div class="slider__left">
+                        <div class="slider__img-wrap">
+                            <img class="slider__img slider__img-port" src="img/portfolio/spaceport.JPG" alt="spaceport">
+                        </div>
+                      </div>
+                      <div class="slider__right">
+                        <h4 class="slider__title">Космодром Байконур</h4>
+                        <span class="slider__label">Описание:</span>
+                        <span class="slider__description">Презентация космодрома Байконур</span>
+                        <div class="slider__properties">
+                          <div class="slider__property property-scale">
+                            <div class="property__label">Масштаб:</div>
+                            <div class="property__value">1:400</div>
+                          </div>
+                          <div class="slider__property property-size">
+                              <div class="property__label">Размер:</div>
+                              <div class="property__value">2000x4000</div>
+                          </div>
+                          <div class="slider__property property-deadline">
+                              <div class="property__label">Срок изготовления:</div>
+                              <div class="property__value">50 дней</div>
+                          </div>
+                        </div>
+                        <button class="button slider__btn order__maket3" id="order__maket3">Заказать макет</button>
+                      </div>
+                    </div>
+              </div>
+              <div class="arrows__right arrows__right-port">
+                  <img src="img/portfolio/right-arrow.svg" alt="right-arrow">
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.section portfolio -->
+
+
+        <div class="section goal" id="goal">
+            <div class="container">
+              <div class="goal-block">
+                <h3 class="goal__title">Все макеты, изготовленные нашей макетной мастерской, <br>помогли клиентам выполнить поставленные цели, а именно:</h3>
+                <div class="goals">
+                  <div class="goals__goal goals__goal-1">
+                      <div class="goals__photo goals__photo_1">
+                        <img src="img/goal/sale.png" alt="sale">
+                      </div>
+                      <p class="goal__text">Продать квартиру, дом <br>участок, объект.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-2">
+                      <div class="goals__photo goals__photo_2">
+                          <img src="img/goal/change.png" alt="change">
+                      </div>
+                      <p class="goal__text">Привлечь инвестиции <br>в проект.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-3">
+                      <div class="goals__photo goals__photo_3">
+                          <img src="img/goal/park.png" alt="park">
+                      </div>
+                      <p class="goal__text">Наглядно представить объект <br>посетители с целью ознакомления <br>с территорией, зданием.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-4">
+                      <div class="goals__photo goals__photo_3">
+                          <img src="img/goal/worldwide.png" alt="worldwide">
+                      </div>
+                      <p class="goal__text">Обучение сотрудников, <br>военнослужащих, студентов <br>и тд.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-5">
+                      <div class="goals__photo goals__photo_5">
+                          <img src="img/goal/lesson.png" alt="lesson">
+                      </div>
+                      <p class="goal__text">Обучение сотрудников, <br>военнослужащих, студентов <br>и тд.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-6">
+                      <div class="goals__photo goals__photo_6">
+                          <img src="img/goal/document.png" alt="document">
+                      </div>
+                      <p class="goal__text">Получить разрешение <br>на строительство.</p>
+                  </div>
+                  <div class="goals__goal goals__goal-7">
+                      <div class="goals__photo goals__photo_7">
+                          <img src="img/goal/gift.png" alt="gift">
+                      </div>
+                      <p class="goal__text">Бизнес подарок</p>
+                  </div>
+                  <div class="goals__goal goals__goal-8">
+                      <div class="goals__photo goals__photo_8">
+                          <img src="img/goal/table.png" alt="table">
+                      </div>
+                      <p class="goal__text">Дополнить интерьер</p>
+                  </div>
+                </div>
+              </div>
+              <!-- /.doc-block -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.section doc -->
+
+
+
+          <section class="section customer" id="customer">
+              <div class="container">
+                <h2 class="customer__title">
+                  Наши клиенты
+                </h2>
+                <div class="slider-block-cust">
+                  <div class="arrows__left arrows__left-cust">
+                    <img src="img/customer/left-arrow.svg" alt="left-arrow">
+                  </div>
+                  <div class="slider slider__customer" data-wow-delay="0.2s">
+                    <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                        <img class="slider__img slider__img-cust" src="img/customer/gazprom.png" alt="slider-1">
+                      </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                          <img class="slider__img slider__img-cust" src="img/customer/alfa.png" alt="slider-2">
+                      </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                          <img class="slider__img slider__img-cust" src="img/customer/moscow.png" alt="slider-3">
+                        </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                        <div class="slider__img-wrap-cust">
+                            <img class="slider__img slider__img-cust" src="img/customer/vtb.png" alt="slider-4">
+                          </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                        <div class="slider__img-wrap-cust">
+                            <img class="slider__img slider__img-cust" src="img/customer/lada.png" alt="slider-5">
+                          </div>
+                    </div>
+
+                   <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                        <img class="slider__img slider__img-cust" src="img/customer/gazprom.png" alt="slider-6">
+                      </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                          <img class="slider__img slider__img-cust" src="img/customer/alfa.png" alt="slider-7">
+                      </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                      <div class="slider__img-wrap-cust">
+                          <img class="slider__img slider__img-cust" src="img/customer/moscow.png" alt="slider-8">
+                        </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                        <div class="slider__img-wrap-cust">
+                            <img class="slider__img slider__img-cust" src="img/customer/vtb.png" alt="slider-9">
+                          </div>
+                    </div>
+                    <div class="slider__item slider__item-cust">
+                        <div class="slider__img-wrap-cust">
+                            <img class="slider__img slider__img-cust" src="img/customer/lada.png" alt="slider-10">
+                          </div>
+                    </div>
+                </div>
+                  <div class="arrows__right arrows__right-cust">
+                    <img src="img/customer/right-arrow.svg" alt="right-arrow">
+                  </div>
+                </div>
+                </div>
+              </div>
+              <!-- /.container -->
+            </section>
+            <!-- /.section customer -->
+
+            <section class="section map" id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef61718f7a4677cbbef965e6cb7bcdd1c6c418689e0740a6a247f754a6b1b311&amp;width=100%25&amp;height=420&amp;lang=ru_RU&amp;scroll=false"></script>
+            </section>
+
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-block">
+          <div class="address-block">
+              <div class="address__img">
+                <img src="img/footer/label.png" alt="label">
+              </div>
+              <div class="address__text">
+                <span class="address__city">г. Москва,</span>
+                <span class="address__street">Автомоторная улица, 4А, стр.21</span>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <a href="tel:88008913333" class="footer__tel">8 800 891-33-33</a>
+              <a href="#" class="footer__order" id="footer__order">Заказать обратный звонок</a>
+            </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-thx" id="modal-thx">
+      <div class="modal-dialog">
+        <button class="button modal-dialog__close" id="close-thx">&times;</button> 
+        <h4 class="modal-dialog__title">Ваша заявка обрабатывается, скоро мы вам перезвоним!</h4>
+      </div>
+      <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal-thx -->
+
+  <div class="modal-new" id="modal-new">
+      <div class="hero-form hero-form-new">
+          <form action="#" class="form hero__form hero__form-new" id="hero__form-new">
+              <button class="button modal-dialog__close-new" id="close-thx-new">&times;</button>
+              <div class="hero__form-wrap hero__form-wrap-new">
+                <h3 class="hero__form-title hero__form-title-new">Оставьте заявку и получите расчет стоимости макета в течение <span class="hero__form-bold">30 минут</span></h3>
+                <input type="text" name="username" class="input hero__input hero__input-new hero__input_1" placeholder="Ваше имя">
+                <input type="tel" name="phone" class="input hero__input hero__input-new hero__input_2 phone" placeholder="Контактный телефон">
+                <input type="email" name="email" class="input hero__input hero__input-new hero__input_2" placeholder="Электронная почта">
+                 <button class="button hero__button hero__button-new" id="button-thx-new" type="submit">Оставить заявку</button>
+              </div>
+          </form>
+      </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/menu-btn.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/slider-port.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/modal-thx.js"></script>
+  <script src="js/my-validate.js"></script>
+<!--   <script src="js/ajax.js"></script> -->
+
+</body>
+</html>

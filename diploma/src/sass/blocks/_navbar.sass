@@ -1,0 +1,140 @@
+.navbar
+  overflow: hidden
+  padding: 5px 0
+  background-color: $nav-color
+  color: $text-black
+  max-width: 100%
+  +reg
+  &__a
+    padding: 0
+    margin: 0
+    &:link, &:visited, &:active
+      color: $text-black
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__menu
+    font-size: 14px
+    &-point
+      list-style-type: none
+      margin-right: 38px
+      border-bottom: 1px solid #adadad
+      &s
+        display: flex
+        padding-left: 0
+  &__contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: center
+  &__num
+    margin-top: 0
+    padding: 0
+    margin-bottom: 7px
+    +bold
+    color: $text-color-dark
+    font-size: 17px
+  &__order
+    padding: 0
+    margin: 0
+    color: $green-color
+    border-bottom: solid 1px $green-color
+    font-size: 14px
+.menu
+  &-text
+    +reg
+    font-size: 14px
+    text-transform: uppercase
+    color: $text-white
+    position: absolute
+    top: 18px
+    left: 45px
+    &_active
+      display: none
+  &-btn
+    display: none
+    width: 50px
+    height: 50px
+    background-color: transparent
+    border-radius: 50%
+    position: relative
+    &_active
+      position: fixed
+      z-index: 2
+      top: 12px
+      left: 
+      span
+        height: 0
+      span:before
+        transform: rotate(45deg)
+      span:after
+        transform: rotate(-45deg)
+  &-span
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: $text-white
+    transition: 0.5s
+    &::before, &::after
+      position: absolute
+      top: 50%
+      margin-top: -1px
+      left: 50%
+      margin-left: -10px
+      width: 20px
+      height: 2px
+      background-color: $text-white
+      content: ''
+      display: block
+      transition: 0.5s
+    &::before
+      transform: translateY(-5px)
+    &::after
+      transform: translateY(5px)
+
+@media (max-width: 1200px)
+  .container
+    width: 760px
+  .navbar
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    background-color: transparent
+    &__num
+      color: $text-white
+    &__menu
+      &-point
+        min-height: 30px 
+        display: flex
+        align-items: center
+      &-points
+        display: none
+        &_active
+          display: flex
+          position: absolute
+          flex-direction: column
+          top: 0
+          left: 0
+          height: 100%
+          width: 100%
+          background-color: rgba(#000, 0.5)
+  .menu
+    &-btn
+      display: block
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 95%
+@media (max-width: 567px)
+  .container
+    max-width: 400px
+    width: 95%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
